@@ -35,7 +35,7 @@ if __name__ == '__main__':
     
 
     args = parser.parse_args()
-    a, b = args.a, args.b
+    a, b = int(args.a), int(args.b)
 
     if os.getenv('add') is True:
         print(add_two_values(a,b))
