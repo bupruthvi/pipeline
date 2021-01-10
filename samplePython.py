@@ -37,16 +37,16 @@ if __name__ == '__main__':
     args = parser.parse_args()
     a, b = args.a, args.b
 
-    if os.getenv('add').lower() == 'true':
+    if os.getenv('add') is True:
         print(add_two_values(a,b))
     
-    if os.getenv('subtract').lower() == 'true':
+    if os.getenv('subtract') is True:
         print(sub_two_values(a,b))
     
-    if os.getenv('divide').lower() == 'true':
+    if os.getenv('divide') is True:
         print(div_two_values(a,b))
     
-    if os.getenv('multiply').lower() == 'true':
+    if os.getenv('multiply') is True:
         print(mul_two_values(a,b))
     
     
